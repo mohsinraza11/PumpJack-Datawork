@@ -1,8 +1,19 @@
 import math
 
 
-def PrimeCountingFunction():
-    return "monday"
+def PrimeFunction():
+    num = int(input('Enter any Number: '))
+    if num > 1:
+        for i in range(2, int(num / 2) + 1):
+            if (num % i == 0):
+                return print(num, 'is not a prime number')
+                break
+
+            else:
+                return print(num, "is a prime number")
+                break
+        else:
+            return print(num, "is not a prime number")
 def DistanceFormula():
     x1=float(input("Enter the value of x1: "))
     y1=float(input("Enter the value  of y1: "))
@@ -79,7 +90,7 @@ def default():
     return "Invalid choice"
 
 switcher = {
-    1: PrimeCountingFunction,
+    1: PrimeFunction,
     2: DistanceFormula,
     3: QuadraticFormula,
     4: Slopeformula ,
