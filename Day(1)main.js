@@ -87,7 +87,7 @@ function isPrime(num) {
      let choice=parseInt(prompt('Enter your choice '));
     switch(choice) {
       case 1:
-     
+            console.log(isPrime());
       break;
 
       case 2:
@@ -122,7 +122,7 @@ function isPrime(num) {
       break;
      
       case 6:
-            console.log(isPrime());
+            
      
       break;
      
