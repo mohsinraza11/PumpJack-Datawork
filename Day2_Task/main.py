@@ -8,8 +8,13 @@ def Slopeformula():
     return "thursday"
 def TrignometricIdentity():
     return "friday"
-def Sumofnumbers():
-    return "Saturday"
+def sum():
+    x = int(input("Type First number: "))
+    y = int(input("Type Second number: "))
+    sum1 = int(x) + int(y)
+    print("The sum is: ", sum1)
+    break
+    
 def default():
     return "Invalid choice"
 
@@ -19,7 +24,7 @@ switcher = {
     3: QuadraticFormula,
     4: Slopeformula ,
     5: TrignometricIdentity,
-    6: Sumofnumbers
+    6: sum
     }
   
 def switch(formula):
