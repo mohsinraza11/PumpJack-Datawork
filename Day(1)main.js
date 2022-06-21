@@ -35,6 +35,20 @@ document.write(-b / (2 * a) + " + i"
 }
 
 
+function trignometric()
+{
+  document.write("You are using trignometric identities");
+  
+  let value=parseInt(prompt('Enter your number:  '));
+  
+  document.write("The value for sin is: "+Math.sin(value)+"\n");
+  
+  document.write("The value for cos is: "+Math.cos(value)+"\n");
+
+  document.write("The value for tan is: "+Math.tan(value));
+}
+
+
      document.write("Choose the formula. \n");
      document.write("1-Prime Counting Function \n");
      document.write("2-Distance Formula \n");
@@ -71,7 +85,7 @@ document.write(-b / (2 * a) + " + i"
       break;
      
       case 5:
-     
+        trignometric()
       break;
      
       case 6:
