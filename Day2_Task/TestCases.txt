@@ -156,3 +156,76 @@ b: s
 c: t
 Expected output:
 wrong data type
+
+
+PRIME FUNCTION
+___________________________________________________________________
+->Test Case 1:
+*Input 
+Enter a number: 11
+*Expected Output
+11 is a prime number
+___________________________________________________________________
+->Test Case 2:
+*Input 
+Enter a number: 10
+*Expected Output
+10 is not a prime number
+___________________________________________________________________
+->Test Case 3:
+*Input 
+Enter a number: a
+*Expected Output
+Wrong input type
+___________________________________________________________________
+->Test Case 4:
+*Input 
+Enter a number: -4
+*Expected Output
+Wrong input type
+
+___________________________________________________________________
+->Test Case 5:
+*Input 
+Enter a number: 4.66
+*Expected Output
+Wrong input type
+
+
+DISTANCE FORMULA
+___________________________________________________________________
+->Test Case 1:
+*Input 
+Enter the value of x1: 1
+Enter the value of y1: 2
+Enter the value of x2: 3
+Enter the value of y2: 4
+*Expected Output
+The distacne between the two points is 2.8284271247461903
+___________________________________________________________________
+->Test Case 2:
+*Input 
+Enter the value of x1: 1
+Enter the value of y1: 2
+Enter the value of x2: -3
+Enter the value of y2: -4
+*Expected Output
+The distacne between the two points is 7.211102550927978
+___________________________________________________________________
+->Test Case 3:
+*Input 
+Enter the value of x1: 1
+Enter the value of y1: w
+Enter the value of x2: -3
+Enter the value of y2: -4
+*Expected Output
+Wrong input type
+___________________________________________________________________
+->Test Case 4:
+*Input 
+Enter the value of x1: 0
+Enter the value  of y1: 1.99999
+Enter the value of x2: 5.88999
+Enter the value of y2: 100
+*Expected Output
+The distacne between the two points is 98.1768503375424 
