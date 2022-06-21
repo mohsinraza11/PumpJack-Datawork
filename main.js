@@ -62,7 +62,12 @@ document.write(-b / (2 * a) + " + i"
       break;
      
       case 4:
-     
+              var x1 = prompt("x1: ");
+              var y1 = prompt("y1: ");
+              var x2 = prompt("x2: ");
+              var y2 = prompt("y2: ");
+              m = (y2-y1)/(x2-x1);
+              alert("Gradient calculated = " + m);
       break;
      
       case 5:
