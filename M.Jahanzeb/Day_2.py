@@ -45,7 +45,7 @@ def trig():
                 print("No valid value! Please try again ...")
             print("Tan: ",math.tan(val))
             break
-
+#gg
         elif(ch==4):
             print("Good-bye!")
             break
