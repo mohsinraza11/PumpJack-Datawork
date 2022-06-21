@@ -39,3 +39,58 @@ x2: -5
 y2: 0
 Expected output:
 -2.0
+
+Test Cases (Trig)
+
+1) Expected input :
+ch = 1 
+Expected output:
+Prompts user to enter number to calculate sin value
+
+2) Expected input :
+ch = 2 
+Expected output:
+Prompts user to enter number to calculate cos value
+
+3)Expected input :
+ch = 3 
+Expected output:
+Prompts user to enter number to calculate tan value
+
+4)Expected input :
+ch = 4
+Expected output:
+Prints "Exit"
+
+5)Expected input :
+ch = some non-integer value
+Expected output:
+Informs user that an incorrect value has been eneters and asks
+them to renter value
+
+6)Expected input :
+ch = integer value beyond the range
+Expected output:
+Informs user that an incorrect value has been eneters and asks
+them to renter value
+
+7)Expected input :
+val = 23
+Expected output:
+Sin: -0.846220
+
+8)Expected input :
+val = 23
+Expected output:
+Cos:  -0.532833
+
+9)Expected input :
+val = 23
+Expected output:
+Tan: 1.588153
+
+10)Expected input :
+val = some string value
+Expected output:
+Informs user that an incorrect value has been eneters and asks
+them to renter value
