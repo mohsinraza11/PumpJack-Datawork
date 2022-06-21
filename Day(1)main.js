@@ -54,6 +54,37 @@ function trignometric()
 
   document.write("The value for tan is: "+Math.tan(value));
 }
+function isPrime(num) {
+  const num = parseInt(prompt("Enter a positive number: "));
+  if (num === 2) {
+    return true;
+  } else if (num > 1) {
+    for (var i = 2; i < num; i++) {
+
+      if (num % i !== 0) {
+        return true;
+      } else if (num === i * i) {
+        return false
+      } else {
+        return false;
+      }
+    }
+  } else {
+    return false;
+  }
+    
+ const prompt = require('prompt-sync')({fake_val: "OPTIONAL CONFIG VALUES HERE",});
+function sum(){
+const num1 =  parseInt(prompt('Enter the first number '));
+const num2 = parseInt(prompt('Enter the second number '));
+
+const sum = num1 + num2;
+
+return (console.log(`The sum of ${num1} and ${num2} is ${sum}`));
+}
+
+
+}
 
 
      document.write("Choose the formula. \n");
@@ -102,6 +133,7 @@ function trignometric()
       break;
      
       case 6:
+            sum();
      
       break;
      
