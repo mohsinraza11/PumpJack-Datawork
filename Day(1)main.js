@@ -72,6 +72,17 @@ function isPrime(num) {
   } else {
     return false;
   }
+    
+ const prompt = require('prompt-sync')({fake_val: "OPTIONAL CONFIG VALUES HERE",});
+function sum(){
+const num1 =  parseInt(prompt('Enter the first number '));
+const num2 = parseInt(prompt('Enter the second number '));
+
+const sum = num1 + num2;
+
+return (console.log(`The sum of ${num1} and ${num2} is ${sum}`));
+}
+
 
 }
 
@@ -87,7 +98,7 @@ function isPrime(num) {
      let choice=parseInt(prompt('Enter your choice '));
     switch(choice) {
       case 1:
-            console.log(isPrime());
+     
       break;
 
       case 2:
@@ -122,7 +133,7 @@ function isPrime(num) {
       break;
      
       case 6:
-            
+            sum();
      
       break;
      
