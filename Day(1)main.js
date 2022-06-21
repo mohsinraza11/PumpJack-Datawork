@@ -34,6 +34,17 @@ document.write(-b / (2 * a) + " + i"
 }
 }
 
+const prompt = require('prompt-sync')({fake_val: "OPTIONAL CONFIG VALUES HERE",});
+function sum(){
+
+const num1 =  parseInt(prompt('Enter the first number '));
+const num2 = parseInt(prompt('Enter the second number '));
+
+const sum = num1 + num2;
+
+return (console.log(`The sum of ${num1} and ${num2} is ${sum}`));
+}
+
 
      document.write("Choose the formula. \n");
      document.write("1-Prime Counting Function \n");
@@ -46,7 +57,7 @@ document.write(-b / (2 * a) + " + i"
      let choice=parseInt(prompt('Enter your choice '));
     switch(choice) {
       case 1:
-     
+          sum();
       break;
 
       case 2:
