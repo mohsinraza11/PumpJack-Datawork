@@ -34,7 +34,34 @@ def QuadraticFormula():
         print("Input correct quadratic equation")  
     
 def Slopeformula():
-    return "thursday"
+    try:
+        x1 = float(input("x1: "))
+        assert isinstance(x1, float)
+    except:
+        print("Not a number!")
+        
+    try:
+        y1 = float(input("y1: "))
+        assert isinstance(y1, float)
+    except:
+        print("Not a number!")
+        
+    try:
+        x2 = float(input("x2: "))
+        assert isinstance(x2, float)
+    except:
+        print("Not a number!")
+        
+    try:
+        y2 = float(input("y2: "))
+        assert isinstance(y2, float)
+    except:
+        print("Not a number!")
+        
+    m = (y2-y1)/(x2-x1)
+    print("Gradient calculated = ", round(m,2))
+    
+    
 def TrignometricIdentity():
     return "friday"
 def sum():
