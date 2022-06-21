@@ -1,0 +1,41 @@
+Slopeformula()
+
+Test case 1
+
+Input: 
+x1: 1
+y1: 2
+x2: 3
+y2: 4
+Expected output:
+1.0
+
+Test case 2
+
+Input: 
+x1: a
+y1: 3
+x2: ty
+y2: 1
+Expected output:
+Not a number
+
+Test case 3
+
+Input: 
+x1: 0
+y1: 0
+x2: 0
+y2: 0
+Expected output:
+ZeroDivisionError 
+
+Test case 4
+
+Input: 
+x1: -1
+y1: -8
+x2: -5
+y2: 0
+Expected output:
+-2.0
