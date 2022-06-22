@@ -5,6 +5,28 @@ import (
   "math"
 )
 
+  
+func CheckPrime() {  
+ var num int  
+ fmt.Print("Enter Number To check Prime:")  
+ fmt.Scanln(&num) 
+ isPrime := true  
+ if num == 0 || num == 1 {  
+  fmt.Printf(" %d is not a  prime number\n", num)  
+ } else {  
+  for i := 2; i <= num/2; i++ {  
+   if num%i == 0 {  
+    fmt.Printf(" %d is not a  prime number\n", num)  
+    isPrime = false  
+    break  
+   }  
+  }  
+  if isPrime == true {  
+   fmt.Printf(" %d is a prime number\n", num)  
+  }  
+ }  
+}  
+
 func slope(){
   var x1, x2, y1, y2 float64
 	fmt.Println("x1: ")
@@ -33,30 +55,6 @@ func Sum() {
 
 	fmt.Println("The Sum of num1 and num2  = ", num1+num2)
 }
-func quad(){
-var a, b, c, root1, root2, imaginary, discriminant float64
-
-    fmt.Print("Enter the a, b, c of Quadratic equation = ")
-    fmt.Scanln(&a, &b, &c)
-
-    discriminant = (b * b) - (4 * a * c)
-
-    if discriminant > 0 {
-        root1 = (-b + math.Sqrt(discriminant)/(2*a))
-        root2 = (-b - math.Sqrt(discriminant)/(2*a))
-        fmt.Println("Two Distinct Real Roots Exist: root1 = ", root1, " and root2 = ", root2)
-    } else if discriminant == 0 {
-        root1 = -b / (2 * a)
-        root2 = -b / (2 * a)
-        fmt.Println("Two Equal and Real Roots Exist: root1 = ", root1, " and root2 = ", root2)
-    } else if discriminant < 0 {
-        root1 = -b / (2 * a)
-        root2 = -b / (2 * a)
-        imaginary = math.Sqrt(-discriminant) / (2 * a)
-        fmt.Println("Two Distinct Complex Roots Exist: root1 = ", root1, "+", imaginary, " and root2 = ", root2, "-", imaginary)
-    }
- }
-
 
 var choice int
 //--------- my function --mustafain
@@ -69,11 +67,11 @@ fmt.Scanln(&choice)
 
 switch choice {
 case 1:
-    fmt.Println("Monday")
+    CheckPrime() 
 case 2:
     fmt.Println("Tuesday")
 case 3:
-    quad()
+    fmt.Println("Tuesday")
 case 4:
     slope()
 case 5:
