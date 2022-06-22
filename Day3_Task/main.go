@@ -81,6 +81,27 @@ func Sum() {
 	fmt.Println("The Sum of num1 and num2  = ", num1+num2)
 }
 
+func distance_formula(x1 float64, x2 float64, y1 float64, y2 float64) {
+	var distance float64
+	distance = math.Sqrt(math.Pow(x2-x1, 2) + math.Pow(y2-y1, 2))
+	fmt.Println("The distance between the two points is:", distance)
+
+}
+
+func dis_formula() {
+	var x1, x2, y1, y2 float64
+
+	fmt.Print("Enter the First X co-oridnate(x1): ")
+	fmt.Scanln(&x1)
+	fmt.Print("Enter the Second X Co-oridnate(x2):")
+	fmt.Scanln(&x2)
+	fmt.Print("Enter the Second Y Co-oridnate(y1):")
+	fmt.Scanln(&y1)
+	fmt.Print("Enter the Second Y Co-oridnate(y2):")
+	fmt.Scanln(&y2)
+	distance_formula(x1, x2, y1, y2)
+
+}
 var choice int
 //--------- my function --mustafain
 
@@ -100,7 +121,7 @@ switch choice {
 case 1:
     CheckPrime() 
 case 2:
-    fmt.Println("Tuesday")
+    dis_formula()
 case 3:
     quad()
 case 4:
@@ -108,8 +129,10 @@ case 4:
 case 5:
     fmt.Println("Friday")
 case 6:
-	sum()
+	Sum()
 default:
     fmt.Println("Invalid")
 }
 }
+
+
