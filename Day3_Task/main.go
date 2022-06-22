@@ -85,7 +85,13 @@ var choice int
 //--------- my function --mustafain
 
 func main() {
-
+ fmt.Println("Choose the formula. \n");
+    fmt.Println("1-Prime Function \n");
+    fmt.Println("2-Distance Formula \n");
+    fmt.Println("3-Quadratic Formula \n");
+    fmt.Println("4-Slope formula \n");
+    fmt.Println("5-Trignometric Identity \n");
+    fmt.Println("6-Sum of numbers \n");
 fmt.Println("Enter your choice in number: ")
 fmt.Scanln(&choice)
 
@@ -102,9 +108,7 @@ case 4:
 case 5:
     fmt.Println("Friday")
 case 6:
-    fmt.Println("Saturday")
-case 7:
-	Sum()
+	sum()
 default:
     fmt.Println("Invalid")
 }
