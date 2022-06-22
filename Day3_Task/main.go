@@ -118,35 +118,61 @@ func Sum() {
 	fmt.Println("The Sum of num1 and num2  = ", num1+num2)
 }
 
+func distance_formula(x1 float64, x2 float64, y1 float64, y2 float64) {
+	var distance float64
+	distance = math.Sqrt(math.Pow(x2-x1, 2) + math.Pow(y2-y1, 2))
+	fmt.Println("The distance between the two points is:", distance)
+
+}
+
+func dis_formula() {
+	var x1, x2, y1, y2 float64
+
+	fmt.Print("Enter the First X co-oridnate(x1): ")
+	fmt.Scanln(&x1)
+	fmt.Print("Enter the Second X Co-oridnate(x2):")
+	fmt.Scanln(&x2)
+	fmt.Print("Enter the Second Y Co-oridnate(y1):")
+	fmt.Scanln(&y1)
+	fmt.Print("Enter the Second Y Co-oridnate(y2):")
+	fmt.Scanln(&y2)
+	distance_formula(x1, x2, y1, y2)
+
+}
 var choice int
 
 //--------- my function --mustafain
 
 func main() {
-	fmt.Println("Choose the formula. \n")
-	fmt.Println("1-Prime Function \n")
-	fmt.Println("2-Distance Formula \n")
-	fmt.Println("3-Quadratic Formula \n")
-	fmt.Println("4-Slope formula \n")
-	fmt.Println("5-Trignometric Identity \n")
-	fmt.Println("6-Sum of numbers \n")
-	fmt.Println("Enter your choice in number: ")
-	fmt.Scanln(&choice)
 
-	switch choice {
-	case 1:
-		CheckPrime()
-	case 2:
-		fmt.Println("Tuesday")
-	case 3:
-		quad()
-	case 4:
-		slope()
-	case 5:
-		trig()
-	case 6:
-		Sum()
-	default:
-		fmt.Println("Invalid")
-	}
+	
+ fmt.Println("Choose the formula. \n");
+    fmt.Println("1-Prime Function \n");
+    fmt.Println("2-Distance Formula \n");
+    fmt.Println("3-Quadratic Formula \n");
+    fmt.Println("4-Slope formula \n");
+    fmt.Println("5-Trignometric Identity \n");
+    fmt.Println("6-Sum of numbers \n");
+fmt.Println("Enter your choice in number: ")
+fmt.Scanln(&choice)
+
+
+switch choice {
+case 1:
+    CheckPrime() 
+case 2:
+    dis_formula()
+case 3:
+    quad()
+case 4:
+    slope()
+case 5:
+  trig()
+case 6:
+	Sum()
+default:
+    fmt.Println("Invalid")
 }
+}
+
+
