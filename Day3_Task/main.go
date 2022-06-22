@@ -1,59 +1,97 @@
 package main
 
 import (
-  "fmt"
-  "math"
+	"fmt"
+	"math"
 )
 
-  
-func CheckPrime() {  
- var num int  
- fmt.Print("Enter Number To check Prime:")  
- fmt.Scanln(&num) 
- isPrime := true  
- if num == 0 || num == 1 {  
-  fmt.Printf(" %d is not a  prime number\n", num)  
- } else {  
-  for i := 2; i <= num/2; i++ {  
-   if num%i == 0 {  
-    fmt.Printf(" %d is not a  prime number\n", num)  
-    isPrime = false  
-    break  
-   }  
-  }  
-  if isPrime == true {  
-   fmt.Printf(" %d is a prime number\n", num)  
-  }  
- }  
+func CheckPrime() {
+	var num int
+	fmt.Print("Enter Number To check Prime:")
+	fmt.Scanln(&num)
+	isPrime := true
+	if num == 0 || num == 1 {
+		fmt.Printf(" %d is not a  prime number\n", num)
+	} else {
+		for i := 2; i <= num/2; i++ {
+			if num%i == 0 {
+				fmt.Printf(" %d is not a  prime number\n", num)
+				isPrime = false
+				break
+			}
+		}
+		if isPrime == true {
+			fmt.Printf(" %d is a prime number\n", num)
+		}
+	}
 }
 
-func quad(){
-var a, b, c, root1, root2, imaginary, discriminant float64
+func quad() {
+	var a, b, c, root1, root2, imaginary, discriminant float64
 
-    fmt.Print("Enter the a, b, c of Quadratic equation = ")
-    fmt.Scanln(&a, &b, &c)
+	fmt.Print("Enter the a, b, c of Quadratic equation = ")
+	fmt.Scanln(&a, &b, &c)
 
-    discriminant = (b * b) - (4 * a * c)
+	discriminant = (b * b) - (4 * a * c)
 
-    if discriminant > 0 {
-        root1 = (-b + math.Sqrt(discriminant)/(2*a))
-        root2 = (-b - math.Sqrt(discriminant)/(2*a))
-        fmt.Println("Two Distinct Real Roots Exist: root1 = ", root1, " and root2 = ", root2)
-    } else if discriminant == 0 {
-        root1 = -b / (2 * a)
-        root2 = -b / (2 * a)
-        fmt.Println("Two Equal and Real Roots Exist: root1 = ", root1, " and root2 = ", root2)
-    } else if discriminant < 0 {
-        root1 = -b / (2 * a)
-        root2 = -b / (2 * a)
-        imaginary = math.Sqrt(-discriminant) / (2 * a)
-        fmt.Println("Two Distinct Complex Roots Exist: root1 = ", root1, "+", imaginary, " and root2 = ", root2, "-", imaginary)
-    }
- }
+	if discriminant > 0 {
+		root1 = (-b + math.Sqrt(discriminant)/(2*a))
+		root2 = (-b - math.Sqrt(discriminant)/(2*a))
+		fmt.Println("Two Distinct Real Roots Exist: root1 = ", root1, " and root2 = ", root2)
+	} else if discriminant == 0 {
+		root1 = -b / (2 * a)
+		root2 = -b / (2 * a)
+		fmt.Println("Two Equal and Real Roots Exist: root1 = ", root1, " and root2 = ", root2)
+	} else if discriminant < 0 {
+		root1 = -b / (2 * a)
+		root2 = -b / (2 * a)
+		imaginary = math.Sqrt(-discriminant) / (2 * a)
+		fmt.Println("Two Distinct Complex Roots Exist: root1 = ", root1, "+", imaginary, " and root2 = ", root2, "-", imaginary)
+	}
+}
 
+//--------TRIG FUNC--------//
 
-func slope(){
-  var x1, x2, y1, y2 float64
+func trig() {
+	var chce int
+	var num float64
+
+	for i := 1; i < 2; i++ {
+		fmt.Print("Chose from the following\n1)Sin\n2)Cos\n3)Tan\n4)Exit\n\n")
+		fmt.Scan(&chce)
+		if (chce < 1) || (chce > 4) {
+			fmt.Print("Invalid value. Try again....   \n")
+			i = i - 1
+		} else {
+			i = i + 3
+		}
+	}
+
+	if chce == 1 {
+		fmt.Print("Enter the number\n")
+		fmt.Scan(&num)
+		fmt.Print("Sin:   ", math.Sin(num))
+
+	} else if chce == 2 {
+		fmt.Print("Enter the number\n")
+		fmt.Scan(&num)
+		fmt.Print("Cos:   ", math.Cos(num))
+
+	} else if chce == 3 {
+		fmt.Print("Enter the number\n")
+		fmt.Scan(&num)
+		fmt.Print("Tan:   ", math.Tan(num))
+
+	} else {
+		fmt.Print("Good-bye!")
+	}
+
+}
+
+//---------TRIG ENDS HERE------//
+
+func slope() {
+	var x1, x2, y1, y2 float64
 	fmt.Println("x1: ")
 	fmt.Scanln(&x1)
 	fmt.Println("x2: ")
@@ -66,7 +104,6 @@ func slope(){
 	m := (y2 - y1) / (x2 - x1)
 	fmt.Println("Slope = ", m)
 }
-
 
 func Sum() {
 	var num1, num2 int
@@ -103,9 +140,12 @@ func dis_formula() {
 
 }
 var choice int
+
 //--------- my function --mustafain
 
 func main() {
+
+	
  fmt.Println("Choose the formula. \n");
     fmt.Println("1-Prime Function \n");
     fmt.Println("2-Distance Formula \n");
@@ -127,7 +167,7 @@ case 3:
 case 4:
     slope()
 case 5:
-    fmt.Println("Friday")
+  trig()
 case 6:
 	Sum()
 default:
