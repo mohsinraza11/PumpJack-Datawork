@@ -19,6 +19,20 @@ func slope(){
 	fmt.Println("Slope = ", m)
 }
 
+
+func Sum() {
+	var num1, num2 int
+	fmt.Print("Enter the First Number = ")
+	fmt.Scanln(&num1)
+	fmt.Print(" \n")
+
+	fmt.Print("Enter the Second Number = ")
+	fmt.Scanln(&num2)
+	fmt.Print(" \n")
+
+	fmt.Println("The Sum of num1 and num2  = ", num1+num2)
+}
+
 var choice int
 //--------- my function --mustafain
 
@@ -42,7 +56,7 @@ case 5:
 case 6:
     fmt.Println("Saturday")
 case 7:
-    fmt.Println("Sunday")
+	Sum()
 default:
     fmt.Println("Invalid")
 }
