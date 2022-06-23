@@ -1,10 +1,7 @@
-function calculate_slope(){
-    var x1 = prompt("x1: ");
-    var y1 = prompt("y1: ");
-    var x2 = prompt("x2: ");
-    var y2 = prompt("y2: ");
-    m = (y2-y1)/(x2-x1);
-    alert("Gradient calculated = " + m);
+function expand(x){
+    console.log("(x-1)^3 = x**3 - 3*x**2 + 3*x - 1")
+    result = x**3 - 3*x**2 + 3*x - 1
+    return result
 }
 
-calculate_slope()
+console.log(expand(4))
